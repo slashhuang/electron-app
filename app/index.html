@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="./showHacker.css">-->
+    <title>直播助手!</title>
+  </head>
+  <body>
+    <h1>欢迎使用直播助手</h1>
+    <!--&lt;!&ndash; All of the Node.js APIs are available in this renderer process. &ndash;&gt;-->
+    <!--We are using node <script>document.write(process.versions.node)</script>,-->
+    <!--Chromium <script>document.write(process.versions.chrome)</script>,-->
+    <!--and Electron <script>document.write(process.versions.electron)</script>.-->
+  <div id="root">加载中</div>
+  </body>
+  <!--<script src="./bundle.js"></script>-->
+  <script>
+    (function() {
+      const script = document.createElement('script');
+      script.src = 'http://localhost:8080/static/bundle.js';
+      document.write(script.outerHTML);
+    }());
+  </script>
+
+</html>

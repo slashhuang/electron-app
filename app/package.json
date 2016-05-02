@@ -1,0 +1,22 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:slashhuang/electron-app.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "author": "slashhuang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slashhuang/electron-app/issues"
+  },
+  "homepage": "https://github.com/slashhuang/electron-app.git"
+}
