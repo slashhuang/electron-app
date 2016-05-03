@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "dev":"webpack",
+    "dev": "concurrently --kill-others \"npm run hot\" \"npm start\"",
     "hot": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "start": "electron ./app/main.js",
     "pack": "build",

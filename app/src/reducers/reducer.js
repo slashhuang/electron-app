@@ -11,6 +11,8 @@ const shopInitialStatus = {
 
 function indexReducer(state = shopInitialStatus,action){
     switch (action.type){
+        case 'init':
+            return Object.assign({},{data:action.data});
         default:
             return state;
     }

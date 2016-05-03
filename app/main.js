@@ -6,14 +6,18 @@ const BrowserWindow = electron.BrowserWindow
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let mainWindow
+let mainWindow;
 
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/index.html')
+  //mainWindow.loadURL('file://' + __dirname + '/index.html');
+  //延迟执行，以便让hot-loader优先执行
+  setTimeout(()=>
+      mainWindow.loadURL("http://localhost:8080/webpack-dev-server/app/index.html")
+  ,800);
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()

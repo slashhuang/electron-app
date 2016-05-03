@@ -9,12 +9,18 @@ import * as AllActions from '../actions/action.js';
     constructor(){
         super();
     }
+    componentDidMount(){
+        this.props.init();
+    }
     render(){
         let hint = this.props.test;
         return (
-            <div>
-                {hint.msg}
-            </div>
+            <dl>
+                <dt>{hint.msg}</dt>
+                {hint.data && hint.data.map(function(data){
+                    return <dd key={data}>{data}</dd>
+                })}
+            </dl>
         )
     }
 }
