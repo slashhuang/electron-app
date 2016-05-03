@@ -10,8 +10,7 @@
 ## 使用方式
 ``` bash
     npm install //安装依赖
-    npm start //查看代码情况
-    npm run hot //热刷新代码[加速本地开发]
+    npm run dev//采用iframe和socket技术进行热刷新开发[加速本地开发]
    
 ```
 
