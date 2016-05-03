@@ -1,7 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "dev":"webpack",
     "dev": "concurrently --kill-others \"npm run hot\" \"npm start\"",
     "hot": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "start": "electron ./app/main.js",
@@ -45,7 +44,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "react": "^0.14.8",
+    "react": "^15.0.2",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-thunk": "^2.0.1"
